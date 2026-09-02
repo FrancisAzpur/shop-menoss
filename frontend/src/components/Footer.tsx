@@ -1,8 +1,12 @@
 function Footer() {
   return (
-    <footer className="border-top mt-auto py-3">
+    <footer className="border-top bg-light py-4 mt-auto">
       <div className="container text-center">
-        <small>© 2026 Shop Menoss</small>
+        <p className="mb-1 fw-semibold">Shop Menoss</p>
+
+        <small className="text-secondary">
+          © 2026 Shop Menoss. Todos los derechos reservados.
+        </small>
       </div>
     </footer>
   )
