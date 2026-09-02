@@ -1,8 +1,17 @@
+import Header from './components/Header'
+import Footer from './components/Footer'
+import AppRoutes from './routes/AppRoutes'
+
 function App() {
   return (
-    <div className="container py-5">
-      <h1>Shop Menoss</h1>
-      <p>Sistema web para la gestión y venta de productos.</p>
+    <div className="d-flex flex-column min-vh-100">
+      <Header />
+
+      <div className="flex-grow-1">
+        <AppRoutes />
+      </div>
+
+      <Footer />
     </div>
   )
 }
