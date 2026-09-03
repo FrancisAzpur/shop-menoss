@@ -1,10 +1,11 @@
-import { Route, Routes } from 'react-router-dom'
-
+import { Routes, Route } from 'react-router-dom'
 import Home from '../pages/Home'
 import Productos from '../pages/Productos'
 import Login from '../pages/Login'
 import Register from '../pages/Register'
 import Carrito from '../pages/Carrito'
+import Pedidos from '../pages/Pedidos'
+import PedidoDetalle from '../pages/PedidoDetalle'
 import NotFound from '../pages/NotFound'
 
 function AppRoutes() {
@@ -15,7 +16,8 @@ function AppRoutes() {
       <Route path="/login" element={<Login />} />
       <Route path="/registro" element={<Register />} />
       <Route path="/carrito" element={<Carrito />} />
-
+      <Route path="/pedidos" element={<Pedidos />} />
+      <Route path="/pedidos/:id" element={<PedidoDetalle />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   )
